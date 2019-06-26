@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/image_id"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/kissfan"
+        android:visibility="gone"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/image2_id"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/kissone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/changeFan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Change Fan"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/stopFan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Stop Fan"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:weightSum="3"
+     android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/rotate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="1"/>
+    <Button
+        android:id="@+id/rotate_a"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="2"/>
+    <Button
+        android:id="@+id/rotate_b"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="3"/>
+ </LinearLayout>
+
+</LinearLayout>
